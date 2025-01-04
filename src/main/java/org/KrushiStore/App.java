@@ -1,4 +1,4 @@
-package org.example;
+package org.KrushiStore;
 
 /**
  * Hello world!
