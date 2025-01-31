@@ -25,6 +25,7 @@ import java.time.Duration;
 
         // Use WebDriverWait with Duration for the timeout (new in Selenium 4.x)
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));// Set up the browser and navigate to the website
+        driver.close();
 
     }
 }
