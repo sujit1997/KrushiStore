@@ -4,10 +4,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import pages.loginpage;
+import pages.logInPage;
 
 public class logInPageTest {
-    private static WebDriver driver = null;
+    public static WebDriver driver = null;
     public static void main(String[] args) {
         WebDriver driver;
         //WebDriverManager.chromedriver().setup(); //Its use for chrome driver
@@ -22,7 +22,7 @@ public class logInPageTest {
         driver.findElement(By.xpath("/html/body/div[3]/div[3]/main/div/p[2]/span")).click();
        // WebElement enternumber = driver.findElement(By.xpath("/html/body/div[3]/div[3]/main/div/form/div/div/input"));
         //enternumber.sendKeys("9325825024");
-        loginpage.enterMobileNumber(driver).sendKeys("9325825024");
+        logInPage.enterMobileNumber(driver).sendKeys("9325825024");
         driver.findElement(By.xpath("/html/body/div[3]/div[3]/main/div/form/button")).click();
 
 
