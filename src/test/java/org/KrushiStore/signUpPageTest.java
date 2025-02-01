@@ -29,6 +29,7 @@ import java.time.Duration;
         signUpPage.enterName(driver).sendKeys("sujit");
         signUpPage.enterNumber(driver).sendKeys("9325825024");
         signUpPage.clickToSubmitButton(driver);
+        Thread.sleep(5000);
        // driver.findElement(By.xpath("/html/body/div[3]/div[3]/main/div/form/button")).click();
 
         // Use WebDriverWait with Duration for the timeout (new in Selenium 4.x)
