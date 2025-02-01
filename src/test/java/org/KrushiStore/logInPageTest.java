@@ -25,18 +25,9 @@ public class logInPageTest {
         driver.get("https://www.krushistore.com/");
 
         try {
-
-            //driver.findElement(By.xpath("//*[contains(@class, 'w-[29px]')]")).click();
             logInPage.clickToSignUP(driver);
-
-            //driver.findElement(By.xpath("/html/body/div[3]/div[3]/main/div/p[2]/span")).click();
             logInPage.clickToSignIn(driver);
-
-            // WebElement enternumber = driver.findElement(By.xpath("/html/body/div[3]/div[3]/main/div/form/div/div/input"));
-            //enternumber.sendKeys("9325825024");
             logInPage.enterMobileNumber(driver).sendKeys("9325825024");
-
-            // driver.findElement(By.xpath("/html/body/div[3]/div[3]/main/div/form/button")).click();
             logInPage.clickToRequestOTPButton(driver);
             Thread.sleep(5000);
         } catch (Exception e) {
