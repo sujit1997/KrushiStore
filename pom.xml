@@ -46,6 +46,13 @@
       <version>7.10.2</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>7.20.1</version>
+    </dependency>
+
     <!-- SLF4J API -->
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -71,11 +78,12 @@
       <artifactId>log4j-core</artifactId>
       <version>2.20.0</version>
     </dependency>
-
-
-
-
-
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml-schemas</artifactId>
+      <version>4.1.2</version>
+    </dependency>
 
 
   </dependencies>
