@@ -1,22 +1,24 @@
 package org.KrushiStore;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 import pages.logInPage;
 import pages.signUpPage;
 
 import java.time.Duration;
 
-public class TestNGDemo {
+public class TestNGDemo2 {
     public static WebDriver driver = null;
     public static ExtentReports extent;
     public static ExtentTest test;
@@ -50,12 +52,6 @@ public class TestNGDemo {
         signUpPage.clickToSubmitButton(driver);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1000));
     }
-//    @test
-//    public static void title(){
-//        test  = extent.createTest("Title check");
-//        driver.get("https://www.krushistore.com/");
-//
-//    }
     @Test(dependsOnMethods = "signup")
     public static void login()  {
         test = extent.createTest("Login Test");

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/sujit/IdeaProjects/KrushiStore/src/test/java/org/KrushiStore" parallel="classes">
+        <classes><class name="org.KrushiStore.TestNGDemo">
+            <methods>
+                <include name="signup"/>
+                <include name="login"/>
+            </methods>
+        </class>
+            <class name="org.KrushiStore.TestNGDemo2">
+                <methods>
+                    <include name="signup"/>
+                    <include name="login"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
