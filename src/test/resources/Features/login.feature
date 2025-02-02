@@ -1,10 +1,10 @@
-#Author
+#Author : Sujit Manmode
 #
 #@SmokeScenario
 Feature: feature to test login funcionality
 
 #@SmokeTest
-Scenario: check login is successful with valid credential
+Scenario: check login is successful with valid credentials
 
 Given user is on login page
 When user enters username and password
