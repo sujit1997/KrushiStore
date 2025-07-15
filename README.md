@@ -27,9 +27,6 @@ krushistore-automation/
 ├── pom.xml
 └── README.md
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -46,17 +43,13 @@ bash
 Copy
 Edit
 mvn clean install
+
 3. Run Test
-bash
-Copy
-Edit
+
 mvn test
 🧪 Sample Test Class: A_signIn.java
 Automates the login icon click:
 
-java
-Copy
-Edit
 driver.get("https://www.krushistore.com");
 driver.findElement(By.xpath("//*[contains(@class,'profileDropdown')]")).click();
 
