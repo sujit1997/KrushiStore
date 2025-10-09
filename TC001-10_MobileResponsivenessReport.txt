@@ -1,0 +1,26 @@
+TC001-10: Homepage Load on Mobile Devices
+-----------------------------------------
+🔹 Testing resolution: 375x667
+ Header visible
+ Footer missing
+ Main content missing
+ Layout issues detected at this resolution
+
+🔹 Testing resolution: 667x375
+ Header visible
+ Footer missing
+ Main content missing
+ Layout issues detected at this resolution
+
+🔹 Testing resolution: 414x896
+ Header visible
+ Footer missing
+ Main content missing
+ Layout issues detected at this resolution
+
+🔹 Testing resolution: 896x414
+ Header visible
+ Footer missing
+ Main content missing
+ Layout issues detected at this resolution
+
