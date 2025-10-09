@@ -21,17 +21,17 @@ public class TS_001_TC_001_03 {
             driver.manage().window().maximize();
             Thread.sleep(2000);
 
-            // ✅ Helper to fetch banners
+            //  Helper to fetch banners
             List<WebElement> banners = getBanners(driver);
 
             if (banners.isEmpty()) {
-                System.out.println("❌ No banners found on the homepage.");
+                System.out.println(" No banners found on the homepage.");
             } else {
                 for (WebElement banner : banners) {
                     if (banner.isDisplayed()) {
-                        System.out.println("✅ Banner visible: " + banner.getAttribute("src"));
+                        System.out.println(" Banner visible: " + banner.getAttribute("src"));
                     } else {
-                        System.out.println("❌ Banner not visible: " + banner.getAttribute("src"));
+                        System.out.println(" Banner not visible: " + banner.getAttribute("src"));
                     }
                 }
             }
@@ -54,9 +54,9 @@ public class TS_001_TC_001_03 {
                 System.out.println("🔹 Window resized to: " + size.width + "x" + size.height);
                 for (WebElement banner : banners) {
                     if (banner.isDisplayed()) {
-                        System.out.println("✅ Banner visible at this size: " + banner.getAttribute("src"));
+                        System.out.println(" Banner visible at this size: " + banner.getAttribute("src"));
                     } else {
-                        System.out.println("❌ Banner missing at this size: " + banner.getAttribute("src"));
+                        System.out.println(" Banner missing at this size: " + banner.getAttribute("src"));
                     }
                 }
             }
@@ -68,16 +68,16 @@ public class TS_001_TC_001_03 {
             banners = getBanners(driver);
             for (WebElement banner : banners) {
                 if (banner.isDisplayed()) {
-                    System.out.println("✅ Banner loaded after refresh: " + banner.getAttribute("src"));
+                    System.out.println(" Banner loaded after refresh: " + banner.getAttribute("src"));
                 } else {
-                    System.out.println("❌ Banner missing after refresh: " + banner.getAttribute("src"));
+                    System.out.println(" Banner missing after refresh: " + banner.getAttribute("src"));
                 }
             }
 
-            System.out.println("✅ Test Case Passed — Banner images validated successfully.");
+            System.out.println(" Test Case Passed — Banner images validated successfully.");
 
         } catch (Exception e) {
-            System.out.println("❌ Test Case Failed: " + e.getMessage());
+            System.out.println(" Test Case Failed: " + e.getMessage());
             e.printStackTrace();
         } finally {
             driver.quit();
