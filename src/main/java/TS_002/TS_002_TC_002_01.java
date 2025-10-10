@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class TS_002_TC_001_01 {
+public class TS_002_TC_002_01 {
 
     public static String browser = "firefox";
     public static WebDriver driver;
